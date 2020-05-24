@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+</style>
+<script src="../script.js"></script>
+</head>
+<div>
+<body>
+<button onclick = "toggleVisibility('comments')">CommentsHidden</button>
+<button onclick = "toggleVisibility('class')">ClassesHidden</button>
+<button onclick = "toggleVisibility('function')">FunctionsHidden</button>
+</div>
+<label>
+Existing Dependencies:
+</label>
+<a href="Converter.h.html">Converter.h</a>
+<pre>
+<div class = "comments">//////////////////////////////////////////////////////////////////////////////////////</div>
+<div class = "comments">// Convert.cpp - according to regex to filter files and then generate html files    //</div>
+<div class = "comments">// ver 2.0                                                                          //</div>
+<div class = "comments">// Language:    C++, Visual Studio 2017                                             //</div>
+<div class = "comments">// Application: Project #2, CSE687 - Object Oriented Design                         //</div>
+<div class = "comments">// ---------------------------------------------------------------------------------//                                                                   </div>
+<div class = "comments">// Author:      Di Yu, Syracuse Univeristy                                          //</div>
+<div class = "comments">// Source:      Jim Fawcett, Syracuse University, CST 4-187                         //</div>
+<div class = "comments">//              jfawcett@twcny.rr.com                                               //</div>
+<div class = "comments">//////////////////////////////////////////////////////////////////////////////////////</div>
+
+#include &quot;Converter.h&quot;
+
+#ifdef TEST_CONVERTER
+
+int main(int argc, char* argv[]) <div class = "function">{
+	Title(&quot;Demonstrate Converter package&quot;);
+	ProcessCmdLine pcl(argc, argv);
+	preface(&quot;Command Line: &quot;);
+	pcl.showCmdLine();
+	if (pcl.parseError()) {
+		pcl.usage();
+		std::cout &lt;&lt; &quot;\n\n&quot;;
+		return 1;
+	}
+	bool hasS = false;
+	if (pcl.hasOption('s')) {
+		hasS = true;
+	}
+	std::string outputpath = Path::getFullFileSpec(&quot;../convertedPages/&quot;);
+	<div class = "comments">//1. search filterfiles</div>
+	SearchFiles searchfiles(pcl.directoryPath(), pcl.patterns(), pcl.regexes(), hasS);
+	std::vector&lt;std::string&gt; filterfiles = searchfiles.doSearching();
+	<div class = "comments">//2. use filterfiles and directoryPath outputpath to do convert and then generate html pages</div>
+	CodeConvert converter(pcl.directoryPath(), filterfiles, outputpath);
+	converter.doConversion();
+	return 0;
+}</div>
+#endif <div class = "comments">// TEST_CONVERTER</div>
+
+
+</pre>
+</body>
+</html>
+
+

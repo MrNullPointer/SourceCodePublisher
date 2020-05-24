@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+</style>
+<script src="../script.js"></script>
+</head>
+<div>
+<body>
+<button onclick = "toggleVisibility('comments')">CommentsHidden</button>
+<button onclick = "toggleVisibility('class')">ClassesHidden</button>
+<button onclick = "toggleVisibility('function')">FunctionsHidden</button>
+</div>
+<label>
+Existing Dependencies:
+</label>
+<pre>
+</div>#pragma once
+<div class = "comments">//////////////////////////////////////////////////////////////////////////////////////</div>
+<div class = "comments">// Converter.h - according to regex to filter files and then generate html files    //</div>
+<div class = "comments">// ver 2.0                                                                          //</div>
+<div class = "comments">// Language:    C++, Visual Studio 2017                                             //</div>
+<div class = "comments">// Application: Project #2, CSE687 - Object Oriented Design                         //</div>
+<div class = "comments">// ---------------------------------------------------------------------------------//                                                                   </div>
+<div class = "comments">// Author:      Di Yu, Syracuse Univeristy                                          //</div>
+<div class = "comments">// Source:      Ammar Salman, Syracuse University                                   //</div>
+<div class = "comments">//              313/788-4694, assalman@syr.edu                                      //</div>
+<div class = "comments">//////////////////////////////////////////////////////////////////////////////////////</div>
+<div class = "comments">/*
+* Package Operations:
+* -------------------
+* This package provides variables:
+* - Dir_:            recived from command line regulate the folder to do conversion
+* - outputDir_:      firstly crate a folder called convertedPages to save files,
+*                    and then save its path as outputPath_
+* - files_:          save absolute path of files after searching
+* - filterFiles_:    save absolute path of files after filtering
+* - convertedFiles_: save absolute path of files after converting
+* - out_:            open a file according to filepath and write into it
+* - depTable_:       save a series of dependecy file of filter files, vector&lt;string&gt;
+* -	lineInfo_:       an std::unordered_map&lt;size_t, TypeInfo&gt;, use it to get line infomation
+*
+* This package provides functions:
+* - doConversion:    convert filter files to html files and then print them out
+* - convertFile:     a boolean function, to return whether converted successfully or not
+*                    obtian the filepath and then open it, if open successfully, 
+*					 write line by line into file inside the convertedpages folder.
+the following method are some concreate operation:
+* -	addPreCodeHTML
+* - use dependency table to add DependencyLink   
+* - add PreTag
+* - replace():       replace the special character inside filter files
+* - handle comment:  single line and multiple line comment
+* - use unordered_map to obtain the type infomation of each line 
+* - handle class and function and endscope
+* - 
+*
+* Required Files:
+* ---------------
+*   CodeUtilities.h
+*   SearchFiles.h
+*   FileAnalysis.h
+*   Converter.cpp
+*
+* Build Command:
+* ---------------
+* - project - convert properties - debugging - command arguments
+* ../Converter &quot;C:/Program Files/Mozilla Firefox/firefox.exe&quot; /s *.h *.cpp 
+*
+* Maintenance History:
+* --------------------
+*ver 2.0 : 9 March 2019
+* -  fix bug in add dependency link
+* -  add &quot;file:<div class = "comments">///&quot; for firfox!</div>
+* -  some logical error
+*ver 1.9 : 8 March 2019
+* -  fix bug in addPreCodeHtml and java script
+* -  the function button onlick()
+*ver 1.8 : 8 March 2019
+* -  set line count = 1
+*ver 1.7 : 7 March 2019
+* -  finish the details of this whole package
+* ver 1.6 : 1 March 2019
+* - seperate the converter package into another one called SeatchFiles
+* ver 1.5 : 10 Feb 2019
+* - add filter and fix bug
+* ver 1.4 : 6 Feb 2019
+* - finish writng notes
+* ver 1.3 : 4 Feb 2019
+* - finish do conversion
+* - debugging
+* - solve the problem caused by wrong path
+* ver 1.2 : 3 Feb 2019
+* - finish repalce() and generateHtmlFiles()
+* - these two functions are basis for do conversion
+* ver 1.1 : 2 Feb 2019
+* - solve various kind of link errors
+* - change other packages to static library
+* - remember to add reference
+* ver 1.0 : 1 Feb 2019
+* - first release
+* - finish searchfiles() and filterfiles()
+*
+* Notes:
+* ------
+* - Designed to provide most of functionality in header file.
+* - Implementation file only needed for test and demo.
+*
+*/</div>
+
+
+#include &lt;iostream&gt;
+#include &quot;../DirectoryNavigator/Utilities/CodeUtilities/CodeUtilities.h&quot;
+#include &quot;../SearchFiles/SearchFiles.h&quot;
+#include &quot;../FileAnalysis/FileAnalysis.h&quot;
+
+
+class CodeConvert <div class = "class">{
+public:	
+	CodeConvert(std::string directory, std::vector&lt;std::string&gt; filterfiles, std::string outputpath);
+	CodeConvert(std::vector&lt;std::string&gt; filterfiles, std::string outputpath);
+	~CodeConvert();
+	const std::vector&lt;std::string&gt; doConversion();
+
+private:
+	bool convertFile(std::string filepath);
+	void addPreCodeHTML(const std::string&amp; title);	
+	void addDependencyLink(std::string filepath);   
+	void addPreTag();
+	void addClosingTags();
+	void replaceSpecialChars(std::string&amp; line);
+	void handlePreComment (std::string&amp; line);
+	void handlePostComment(std::string&amp; line);
+	void handleFunction(std::string&amp; line);
+	void handleClass(std::string&amp; line);
+	void handleEndScope(std::string&amp; line);
+	
+
+private:
+	std::string Dir_; <div class = "comments">//direcotry from cmd line</div>
+	std::vector&lt;std::string&gt; filterFiles_;
+	std::string outputDir_;
+	std::ofstream out_;
+	DependencyTable depTable_;
+	std::unordered_map&lt;size_t, TypeInfo&gt; lineInfo_;
+	std::vector&lt;std::string&gt; convertedFiles_;
+};
+</div>
+<div class = "comments">/*---------------------------&lt; Constructor and Destructor &gt;-------------------------*/</div>
+inline CodeConvert::CodeConvert(std::string directory, std::vector&lt;std::string&gt; filterfiles,std::string outputpath) :
+	Dir_(directory), filterFiles_(filterfiles), outputDir_(outputpath)
+<div class = "function">{
+
+}</div>
+inline CodeConvert::CodeConvert(std::vector&lt;std::string&gt; filterfiles, std::string outputpath) <div class = "function">{
+	filterFiles_ = filterfiles;
+	outputDir_ = outputpath;
+}</div>
+
+inline CodeConvert::~CodeConvert() <div class = "function">{}</div>
+
+<div class = "comments">/*---------------&lt; do conversion operation &gt;-------------------------*/</div>
+inline const std::vector&lt;std::string&gt; CodeConvert::doConversion() <div class = "function">{
+	title(&quot;\n Step4: generate html files in convertedPages folder \n&quot;);
+	for (auto filepath : filterFiles_) {
+		FileAnalysis fileinfo(Dir_, filepath);
+		fileinfo.doFileAnalysis();
+		depTable_ = fileinfo.returnDepTable();
+		lineInfo_ = fileinfo.lineInfo();
+		if (convertFile(filepath)) {
+			std::cout &lt;&lt; &quot;\n  -- Converted: &quot;;
+		}
+		else {
+			std::cout &lt;&lt; &quot;\n  -- Failed:    &quot;;
+		}
+	}
+	for (auto file : convertedFiles_) {
+		std::cout &lt;&lt; file &lt;&lt; std::endl;
+	}
+	return convertedFiles_;
+}</div>
+
+<div class = "comments">/*-------------------&lt; do add tag operation on single file &gt;--------------------------*/</div>
+inline bool CodeConvert::convertFile(std::string filepath) <div class = "function">{
+	<div class = "comments">//use the path of filterfile inside filterFiles_ to open one filtered file line by line</div>
+	std::ifstream in(filepath);
+	if (!in.is_open() || !in.good()) {
+		std::cout &lt;&lt; &quot;Error -- unable to read file, path may be invalid.&quot;;
+		in.close();
+		return false;
+	}
+	std::string filename = FileSystem::Path::getName(filepath);
+	std::string outputPath = outputDir_ + filename + &quot;.html&quot;;
+	out_.open(outputPath, std::ofstream::out);
+	if (!out_.is_open() || !out_.good()) {
+		std::cout &lt;&lt; &quot;Error -- unable to open output file for writing. \n&quot;;
+		in.close();
+		return false;
+	}
+	<div class = "comments">// write everything to file </div>
+	addPreCodeHTML(filename);
+	addDependencyLink(filepath);
+	addPreTag();
+	<div class = "comments">//check function and class</div>
+	int count = 1;
+	while (in.good()) {
+		std::string line;
+		while (std::getline(in, line)) {
+			replaceSpecialChars(line);
+			handlePreComment(line);
+			handlePostComment(line);
+			if (lineInfo_.find(count) == lineInfo_.end()) { <div class = "comments">//no special type, write into all code to out_</div>
+				out_ &lt;&lt; line &lt;&lt; std::endl;
+				count++;
+				continue;
+			}
+			TypeInfo typevalue = lineInfo_[count];
+			switch (typevalue) {
+			case TypeInfo::class_begin: {
+				handleClass(line);
+				break; }
+			case TypeInfo::function_begin: {
+				handleFunction(line);
+				break; }
+			case TypeInfo::end_scope: {
+				handleEndScope(line);
+				break; }
+			default: std::cout &lt;&lt; &quot;type information not found! \n&quot;;
+			}
+			out_ &lt;&lt; line &lt;&lt; std::endl;
+			count++;
+		}
+	}
+	addClosingTags();
+	out_.close();
+	convertedFiles_.push_back(outputPath);
+	return true;
+}</div>
+
+<div class = "comments">/*----------------&lt; private - add generic HTML preliminary markup &gt;---------------*/</div>
+inline void CodeConvert::addPreCodeHTML(const std::string&amp; title) <div class = "function">{
+	out_ &lt;&lt; &quot;&lt;DOCTYPE !HTML&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;&lt;html&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;  &lt;head&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;    &lt;Title&gt;&quot; &lt;&lt; title &lt;&lt; &quot;&lt;/Title&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;    &lt;script  src= Hidden.js&gt;&lt;/script&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;    &lt;style&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;      body {&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;        padding:15px 40px;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;        font-family: Consolas;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;        font-size: 1.25em;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;        font-weight: normal;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;      }&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;      &lt;/style&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;  &lt;/head&gt;&quot; &lt;&lt; std::endl &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;  &lt;body&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;  &lt;button onclick = \&quot;toggleVisibility('comment')\&quot;&gt;comment&lt;/button&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;  &lt;button onclick = \&quot;toggleVisibility('class')\&quot;&gt;class&lt;/button&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;  &lt;button onclick = \&quot;toggleVisibility('function')\&quot;&gt;function&lt;/button&gt;&quot; &lt;&lt; std::endl;
+}</div>
+
+
+<div class = "comments">/*-----------------------&lt; do add pre tag operation &gt;-----------------------------*/</div>
+inline void CodeConvert::addDependencyLink(std::string filepath) <div class = "function">{
+	std::string filename = FileSystem::Path::getName(filepath);
+	<div class = "comments">//check deptable exist or not and then add link</div>
+	if (!depTable_.has(filename)) { <div class = "comments">// in case of single file conversion</div>
+		std::cout &lt;&lt; &quot;\n    No entry found in DependencyTable for [&quot; + filename + &quot;]. Skipping dependency links..&quot; &lt;&lt; std::endl;
+		return;
+	}
+	if (depTable_[filename].size() == 0) { <div class = "comments">// in case the file has no dependencies</div>
+		std::cout &lt;&lt; &quot;\n  No dependencies found for [&quot; + filename + &quot;]. Skipping dependency links..&quot; &lt;&lt; std::endl;
+		return;
+	}
+	out_ &lt;&lt; &quot;    &lt;h3&gt;Dependencies: &quot; &lt;&lt; std::endl;
+	for (auto depname : depTable_[filename]) {
+		std::string depPath = outputDir_ + depname + &quot;.html&quot;;
+		std::cout &lt;&lt; &quot;adding: &quot; &lt;&lt; depname &lt;&lt;&quot;\n&quot;;
+		out_ &lt;&lt; &quot;     &lt;a href=\&quot;&quot; &lt;&lt; &quot;file:<div class = "comments">///&quot;&lt;&lt;depPath &lt;&lt; &quot;\&quot;&gt;&quot; &lt;&lt; depname &lt;&lt; &quot;&lt;/a&gt;&quot; &lt;&lt; std::endl; //name + link</div>
+	}
+	out_ &lt;&lt; &quot;    &lt;/h3&gt;&quot;;
+}</div>
+
+<div class = "comments">/*-------------------------&lt; private -  add pre tag  &gt;----------------------------*/</div>
+inline void CodeConvert::addPreTag() <div class = "function">{
+	out_ &lt;&lt; &quot;    &lt;pre&gt;&quot; &lt;&lt; std::endl;
+}</div>
+
+
+<div class = "comments">/*-------------&lt; private - add generic HTML markup closing tags &gt;-----------------*/</div>
+inline void CodeConvert::addClosingTags() <div class = "function">{
+	out_ &lt;&lt; &quot;    &lt;/pre&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;  &lt;/body&gt;&quot; &lt;&lt; std::endl;
+	out_ &lt;&lt; &quot;&lt;/html&gt;&quot; &lt;&lt; std::endl;
+}</div>
+<div class = "comments">/*----------------&lt; private - replace HTML special chars &gt;------------------------*/</div>
+inline void CodeConvert::replaceSpecialChars(std::string&amp; line) <div class = "function">{
+	size_t pos = line.npos;
+	while ((pos = line.find('&lt;')) != line.npos) {
+		line.replace(pos, 1, &quot;&amp;lt;&quot;);
+	}
+	while ((pos = line.find('&gt;')) != line.npos) {
+		line.replace(pos, 1, &quot;&amp;gt;&quot;);
+	}
+}</div>
+
+<div class = "comments">/*----------------&lt; private - handle pre line comment &gt;------------------------*/</div>
+inline void CodeConvert::handlePreComment(std::string&amp; line) <div class = "function">{
+	size_t pos = line.find('/');
+	if (pos == line.npos) return;  <div class = "comments">// not find / in the whole line</div>
+	if (pos == line.size() - 1) return; <div class = "comments">//only one / exists in the end of line</div>
+	if (line[pos + 1] == '/') {
+		line.replace(pos, 1, &quot;&lt;div class = \&quot; comment\&quot;&gt;/&quot;); <div class = "comments">//&lt;div class = \&quot; comment\&quot;&gt;/</div>
+		line += &quot;&lt;/div&gt;&quot;;
+	}
+	if (line[pos + 1] == '*') {
+		line.replace(pos, 1, &quot;&lt;div class = \&quot; comment\&quot;&gt;/&quot;);
+	}
+	<div class = "comments">//??? why need this one</div>
+	if (line[pos + 1] == '<div class = "comments">//') {</div>
+		line.replace(pos, 1, &quot;&lt;div class = \&quot;comment\&quot;&gt;/&quot;);
+	}
+}</div>
+
+<div class = "comments">/*----------------&lt; private - handle post lines comment &gt;------------------------*/</div>
+void CodeConvert::handlePostComment(std::string&amp; line) <div class = "function">{
+	size_t pos = line.find('*');
+	if (pos == line.npos) return;  <div class = "comments">// not find / in the whole line</div>
+	if (pos == line.size() - 1) return; <div class = "comments">//only one / exists in the end of line</div>
+	if (line[pos + 1] == '/') {
+		line += &quot;&lt;/div&gt;&quot;;
+	}
+}</div>
+
+<div class = "comments">/*----------------&lt; private - handle function &gt;------------------------*/</div>
+void CodeConvert::handleFunction(std::string&amp; line) <div class = "function">{
+	size_t pos = line.find('{');
+	if (pos == line.npos) return;
+	line.replace(pos, 1, &quot;&lt;div class = \&quot;function\&quot;&gt;{&quot;);
+}</div>
+
+<div class = "comments">/*----------------&lt; private - handle class &gt;------------------------*/</div>
+void CodeConvert::handleClass(std::string&amp; line) <div class = "function">{
+	size_t pos = line.find('{');
+	if (pos == line.npos) return;
+	line.replace(pos, 1, &quot;&lt;div class = \&quot;class\&quot;&gt;{&quot;); 
+}</div>
+
+<div class = "comments">/*----------------&lt; private - handle end scope &gt;------------------------*/</div>
+void CodeConvert::handleEndScope(std::string&amp; line) <div class = "function">{
+	line += &quot;&lt;/div&gt;&quot;;
+}
+</pre>
+</body>
+</html>
+
+

@@ -1,0 +1,288 @@
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\test1.0\Project2_DiYu\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\test1.1\Project2_DiYu\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\bin\Debug\Shim.dll
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\bin\Debug\Shim.pdb
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\T\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\bin\Debug\Shim.dll
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\bin\Debug\Shim.pdb
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\T1\Project2_DiYu\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\bin\Debug\Shim.dll
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\bin\Debug\Shim.pdb
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\T2\Project2_DiYu\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\bin\Debug\Shim.dll
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\bin\Debug\Shim.pdb
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\test1.4 - Copy\Project2_DiYu\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\bin\Debug\Shim.dll
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\bin\Debug\Shim.pdb
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\T4\Project2_DiYu\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\Project3\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\Project3\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\Project3\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\Project3\GUI\bin\Debug\Shim.dll
+C:\Users\yd090\Desktop\Project3\GUI\bin\Debug\Shim.pdb
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\PopupWindow.g.cs
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\PopupWindow.baml
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\Project3\GUI\obj\Debug\GUI.pdb
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\bin\Debug\GUI.exe.config
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\bin\Debug\GUI.exe
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\bin\Debug\GUI.pdb
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\bin\Debug\Shim.dll
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\bin\Debug\Shim.pdb
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\MainWindow.g.cs
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\PopupWindow.g.cs
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\App.g.cs
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\MainWindow.baml
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\PopupWindow.baml
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\GUI.g.resources
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\GUI.exe
+C:\YD\OOD\YD3\Final Version\Project3-DiYu\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\1.0\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\1.0\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\1.0\GUI\obj\Debug\PopupWindow.g.cs
+C:\Users\yd090\Desktop\1.0\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\1.0\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\1.0\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\1.0\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\1.0\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\test\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\test\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\test\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\test\GUI\bin\Debug\Translater.dll
+C:\Users\yd090\Desktop\test\GUI\bin\Debug\Translater.pdb
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\PopupWindow.g.cs
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\PopupWindow.baml
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\test\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\2\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\2\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\2\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\2\GUI\bin\Debug\Translater.dll
+C:\Users\yd090\Desktop\2\GUI\bin\Debug\Translater.pdb
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\PopupWindow.g.cs
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\PopupWindow.baml
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\2\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\2.1\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\2.1\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\2.1\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\2.1\GUI\bin\Debug\Translater.dll
+C:\Users\yd090\Desktop\2.1\GUI\bin\Debug\Translater.pdb
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\PopupWindow.g.cs
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\PopupWindow.baml
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\2.1\GUI\obj\Debug\GUI.pdb
+C:\Users\yd090\Desktop\2.2\GUI\bin\Debug\GUI.exe.config
+C:\Users\yd090\Desktop\2.2\GUI\bin\Debug\GUI.exe
+C:\Users\yd090\Desktop\2.2\GUI\bin\Debug\GUI.pdb
+C:\Users\yd090\Desktop\2.2\GUI\bin\Debug\Translater.dll
+C:\Users\yd090\Desktop\2.2\GUI\bin\Debug\Translater.pdb
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\PopupWindow.g.cs
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\App.g.cs
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\MainWindow.baml
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\PopupWindow.baml
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\GUI.g.resources
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\GUI.exe
+C:\Users\yd090\Desktop\2.2\GUI\obj\Debug\GUI.pdb
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\bin\Debug\GUI.exe.config
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\bin\Debug\GUI.exe
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\bin\Debug\GUI.pdb
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\bin\Debug\Translater.dll
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\bin\Debug\Translater.pdb
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\PopupWindow.g.cs
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\App.g.cs
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\MainWindow.baml
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\PopupWindow.baml
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\GUI.g.resources
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\GUI.exe
+C:\Users\Owner\Desktop\Project4_DiYu\GUI\obj\Debug\GUI.pdb
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\bin\Debug\GUI.exe.config
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\bin\Debug\GUI.exe
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\bin\Debug\GUI.pdb
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\bin\Debug\Translater.dll
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\bin\Debug\Translater.pdb
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\MainWindow.g.cs
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\PopupWindow.g.cs
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\App.g.cs
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\GUI_MarkupCompile.cache
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\GUI_MarkupCompile.lref
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\MainWindow.baml
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\PopupWindow.baml
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\GUI.g.resources
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\GUI.exe
+C:\Users\Owner\Desktop\WanxiangXie_Proj4\GUI\obj\Debug\GUI.pdb

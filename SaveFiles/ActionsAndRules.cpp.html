@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+</style>
+<script src="../script.js"></script>
+</head>
+<div>
+<body>
+<button onclick = "toggleVisibility('comments')">CommentsHidden</button>
+<button onclick = "toggleVisibility('class')">ClassesHidden</button>
+<button onclick = "toggleVisibility('function')">FunctionsHidden</button>
+</div>
+<label>
+Existing Dependencies:
+</label>
+<a href="ActionsAndRules.h.html">ActionsAndRules.h</a>
+<pre>
+<div class = "comments">/////////////////////////////////////////////////////////////////////</div>
+<div class = "comments">//  ActionsAndRules.cpp - implements new parsing rules and actions //</div>
+<div class = "comments">//  ver 3.4                                                        //</div>
+<div class = "comments">//  Language:      Visual C++ 2008, SP1                            //</div>
+<div class = "comments">//  Platform:      Dell Precision T7400, Vista Ultimate SP1        //</div>
+<div class = "comments">//  Application:   Prototype for CSE687 Pr1, Sp09                  //</div>
+<div class = "comments">//  Author:        Jim Fawcett, CST 4-187, Syracuse University     //</div>
+<div class = "comments">//                 (315) 443-3948, jfawcett@twcny.rr.com           //</div>
+<div class = "comments">/////////////////////////////////////////////////////////////////////</div>
+
+#include &quot;ActionsAndRules.h&quot;
+#include &quot;../Utilities/Utilities.h&quot;
+
+using namespace CodeAnalysis;
+
+Repository* Repository::instance;
+
+#ifdef TEST_ACTIONSANDRULES
+
+#include &lt;iostream&gt;
+#include &quot;ActionsAndRules.h&quot;
+#include &quot;Tokenizer.h&quot;
+#include &quot;Semiression.h&quot;
+
+int main(int argc, char* argv[])
+<div class = "function">{
+  std::cout &lt;&lt; &quot;\n  Testing ActionsAndRules class\n &quot;
+            &lt;&lt; std::string(30,'=') &lt;&lt; std::endl;
+
+  try
+  {
+    Utilities::StringHelpers::Title(
+      &quot;Actions and Rules - these construction tests are no longer valid&quot;
+    );
+    <div class = "comments">//PreprocStatement pps;</div>
+    <div class = "comments">//pps.addAction(&amp;ppq);</div>
+
+    <div class = "comments">//FunctionDefinition fnd;</div>
+    <div class = "comments">//PrettyPrintToQ pprtQ(resultsQ);</div>
+    <div class = "comments">//fnd.addAction(&amp;pprtQ);</div>
+
+    <div class = "comments">//Toker toker(&quot;../ActionsAndRules.h&quot;);</div>
+    <div class = "comments">//Semi se(&amp;toker);</div>
+    <div class = "comments">//Parser parser(&amp;se);</div>
+    <div class = "comments">//parser.addRule(&amp;pps);</div>
+    <div class = "comments">//parser.addRule(&amp;fnd);</div>
+    <div class = "comments">//while(se.get())</div>
+    <div class = "comments">//  parser.parse();</div>
+    <div class = "comments">//size_t len = resultsQ.size();</div>
+    <div class = "comments">//for(size_t i=0; i&lt;len; ++i)</div>
+    <div class = "comments">//{</div>
+    <div class = "comments">//  std::cout &lt;&lt; &quot;\n  &quot; &lt;&lt; resultsQ.front().c_str();</div>
+    <div class = "comments">//  resultsQ.pop();</div>
+    <div class = "comments">//}</div>
+    std::cout &lt;&lt; &quot;\n\n&quot;;
+  }
+  catch(std::exception&amp; ex)
+  {
+    std::cout &lt;&lt; &quot;\n\n  &quot; &lt;&lt; ex.what() &lt;&lt; &quot;\n\n&quot;;
+  }
+}</div>
+#endif
+
+</pre>
+</body>
+</html>
+
+

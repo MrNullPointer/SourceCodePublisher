@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+</style>
+<script src="../script.js"></script>
+</head>
+<div>
+<body>
+<button onclick = "toggleVisibility('comments')">CommentsHidden</button>
+<button onclick = "toggleVisibility('class')">ClassesHidden</button>
+<button onclick = "toggleVisibility('function')">FunctionsHidden</button>
+</div>
+<label>
+Existing Dependencies:
+</label>
+<a href="Convert.h.html">Convert.h</a>
+<pre>
+<div class = "comments">///////////////////////////////////////////////////////////////////////////////////</div>
+<div class = "comments">// Convert.cpp  - convert files matching patterns and regexes into .HTML file    //</div>
+<div class = "comments">// ver 1.0                                                                       //</div>
+<div class = "comments">// Language:    C++, Visual Studio 2017					        				 //</div>
+<div class = "comments">// Application: Most Projects, CSE687 - Object Oriented Design                   //</div>
+<div class = "comments">// Author:      Wanxiang Xie, Syracuse University,						         //</div>
+<div class = "comments">//              wxie15@syr.edu											         //</div>
+<div class = "comments">///////////////////////////////////////////////////////////////////////////////////</div>
+
+#include &quot;Convert.h&quot;
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+
+<div class = "comments">//----&lt; test stub &gt;--------------------------------------------------------</div>
+
+#ifdef TEST_CONVERT
+
+int main(int argc, char* argv[])
+<div class = "function">{
+	Utilities::Title(&quot;Demonstrate DirExplorer-Naive, &quot; + DirExplorerN::version());
+
+	std::cout &lt;&lt; &quot;\n Accept a path and a regular expression from the command line(meet the Requirements 4)&quot; &lt;&lt; std::endl;
+	std::cout &lt;&lt; &quot;=======================================================&quot; &lt;&lt; std::endl;
+	Utilities::ProcessCmdLine pcl(argc, argv);
+	<div class = "comments">/*pcl.usage(customUsage());*/</div>
+	Utilities::preface(&quot;Command Line: &quot;);
+	pcl.showCmdLine();
+	pcl.showRegexes();
+	<div class = "comments">//Utilities::putline();</div>
+	if (pcl.parseError())
+	{
+		pcl.usage();
+		std::cout &lt;&lt; &quot;\n\n&quot;;
+		return 1;
+	}
+	DirExplorerN de(pcl.path());
+	for (auto patt : pcl.patterns())    <div class = "comments">//add patterns</div>
+	{
+		de.addPattern(patt);
+	}
+	for (auto patt : pcl.regexes())  <div class = "comments">//add regexes</div>
+	{
+		de.addRegex(patt);
+	}
+	if (pcl.hasOption('s'))
+	{
+		de.recurse();
+	}
+
+	std::cout &lt;&lt; &quot;\n Show directories and files which have been found. &quot; &lt;&lt; std::endl;
+	std::cout &lt;&lt; &quot;=======================================================&quot; &lt;&lt; std::endl;
+	de.search();                  <div class = "comments">//search files matching patterns and regexes</div>
+
+	std::cout &lt;&lt; &quot;\n Show Stats: &quot;;
+	de.showStats();
+	Convert cvt(pcl.path());     <div class = "comments">// put in dir:\DemoPackageConstruction</div>
+
+	std::cout &lt;&lt; &quot;\n Convert matching file text to a valid html file, and save to a folder named 'convertedPages'.\n  (meet the Requirements 6)&quot; &lt;&lt; std::endl;
+	std::cout &lt;&lt; &quot;=======================================================&quot; &lt;&lt; std::endl;
+
+
+	cvt.createHTMLFiles(de.getFilePaths());
+	return 0;
+
+}</div>
+
+
+#endif
+
+</pre>
+</body>
+</html>
+
+

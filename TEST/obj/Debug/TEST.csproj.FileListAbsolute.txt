@@ -1,0 +1,15 @@
+C:\Users\Owner\Desktop\CodePublisher\TEST\bin\Debug\TEST.exe.config
+C:\Users\Owner\Desktop\CodePublisher\TEST\bin\Debug\TEST.exe
+C:\Users\Owner\Desktop\CodePublisher\TEST\bin\Debug\TEST.pdb
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\TEST.csprojAssemblyReference.cache
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\MainWindow.g.cs
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\App.g.cs
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\TEST_MarkupCompile.cache
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\TEST_MarkupCompile.lref
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\MainWindow.baml
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\TEST.g.resources
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\TEST.Properties.Resources.resources
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\TEST.csproj.GenerateResource.cache
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\TEST.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\TEST.exe
+C:\Users\Owner\Desktop\CodePublisher\TEST\obj\Debug\TEST.pdb

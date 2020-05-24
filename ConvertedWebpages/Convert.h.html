@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+</style>
+<script src="../script.js"></script>
+</head>
+<div>
+<body>
+<button onclick = "toggleVisibility('comments')">CommentsHidden</button>
+<button onclick = "toggleVisibility('class')">ClassesHidden</button>
+<button onclick = "toggleVisibility('function')">FunctionsHidden</button>
+</div>
+<label>
+Existing Dependencies:
+</label>
+<pre>
+#pragma once
+<div class = "comments">///////////////////////////////////////////////////////////////////////////////////</div>
+<div class = "comments">// Convert.h  - convert files matching patterns and regexes into .HTML file      //</div>
+<div class = "comments">// ver 1.1                                                                       //</div>
+<div class = "comments">// Language:    C++, Visual Studio 2017					        		         //</div>
+<div class = "comments">// Application: Most Projects, CSE687 - Object Oriented Design                   //</div>
+<div class = "comments">// Author:      Wanxiang Xie, Syracuse University,						         //</div>
+<div class = "comments">//              wxie15@syr.edu											         //</div>
+<div class = "comments">///////////////////////////////////////////////////////////////////////////////////</div>
+
+<div class = "comments">// Package Operations :</div>
+<div class = "comments">// --------------------</div>
+<div class = "comments">// This file including function to create HTML files with names matching patterns and regexes.dui</div>
+<div class = "comments">// Convert html fragment into a valid html document by insert Webpage Template.</div>
+<div class = "comments">// Replace specific markeup sign to which HTML could distinguish.</div>
+<div class = "comments">// Required Files :</div>
+<div class = "comments">// ===============</div>
+<div class = "comments">// DirExplorerN.h</div>
+<div class = "comments">// StringUtilities.h</div>
+<div class = "comments">// CodeUtilities.h</div>
+<div class = "comments">//  Maintenance History :</div>
+<div class = "comments">// ----------------------</div>
+<div class = "comments">// ver 1.1 : add function to addDependencyLinks</div>
+
+
+
+
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &quot;../DirExplorer-Naive/DirExplorerN.h&quot;
+#include &quot;../UtilitiesN/StringUtilities/StringUtilities.h&quot;
+#include &quot;../UtilitiesN/CodeUtilities/CodeUtilities.h&quot;
+#include &lt;fstream&gt;
+#include &quot;../DependencyTable/DependencyTable.h&quot;
+
+
+
+using namespace FileSystem;
+
+namespace FileSystem {
+	class Convert <div class = "class">{
+	public:
+		using patterns = std::vector&lt;std::string&gt;;
+		Convert(std::string);
+		~Convert();
+		void replaceSpecMarkup(std::string &amp; str);
+		void TransToHTML(std::string path, FileSystem::File &amp; outfile);
+		void createHTMLFiles(const std::vector&lt;std::string&gt;&amp; fpath);
+		void setDepTable(const DependencyTable &amp; dt);
+		void addDependencyLinks(std::string file, FileSystem::File &amp; outfile);
+		std::vector&lt;std::string&gt; getFileOutPaths();
+		std::vector&lt;std::string&gt; getFileNames();
+
+	private:
+		std::string directory_;
+		std::vector&lt;std::string&gt; fileOutPath_;
+		std::vector&lt;std::string&gt; fileNames_;
+
+		DependencyTable dt_;
+		
+	};
+</div>
+	inline Convert::Convert(std::string directory) <div class = "function">{
+		directory = directory_;
+	}</div>
+
+	inline Convert::~Convert() <div class = "function">{
+	}</div>
+
+
+	<div class = "comments">//----&lt; Replace specific markeup sign to which HTML could distinguish &gt;---------------------</div>
+
+	inline void Convert::replaceSpecMarkup(std::string&amp; str) <div class = "function">{
+		for (size_t i = 0; i &lt; str.length(); i++) {
+			if (str[i] == '&lt;') {
+				str.replace(i, 1, &quot;&amp;lt;&quot;);
+				i += 1;
+			}
+			if (str[i] == '&gt;') {
+				str.replace(i, 1, &quot;&amp;gt;&quot;);
+				i += 1;
+			}
+			if (str[i] == '&amp;') {
+				str.replace(i, 1, &quot;&amp;amp;&quot;);
+				i += 1;
+			}
+			if (str[i] == '&quot;') {
+				str.replace(i, 1, &quot;&amp;quot;&quot;);
+				i += 1;
+			}
+		}
+	}</div>
+
+
+	<div class = "comments">// -----&lt; set dependency table function &gt;---------------------------------</div>
+
+	inline void Convert::setDepTable(const DependencyTable &amp; dt)
+	<div class = "function">{
+		dt_ = dt;
+	}</div>
+
+	<div class = "comments">// -----&lt; add dependency links to the html file &gt;---------------------------------</div>
+
+	inline void Convert::addDependencyLinks(std::string file, FileSystem::File &amp;outfile)
+	<div class = "function">{
+		std::string filename = Path::getName(file);
+		if (!dt_.has(file)) { <div class = "comments">// in case of single file conversion</div>
+			std::cout &lt;&lt; &quot;\n    No entry found in DependencyTable for [&quot; + filename + &quot;]. Skipping dependency links..&quot;;
+			return;
+		}
+
+		if (dt_[file].size() == 0) { <div class = "comments">// in case the file has no dependencies</div>
+			std::cout &lt;&lt; &quot;\n    No dependencies found for [&quot; + filename + &quot;]. Skipping dependency links..&quot;;
+			return;
+		}
+
+		for (auto dep : dt_[file]) {
+					outfile.putLine(&quot;&lt;a href=\&quot;&quot;, false);
+					outfile.putLine(Path::getName(dep), false);
+					outfile.putLine(&quot;.html\&quot;&gt;&quot;, false);
+					outfile.putLine(Path::getName(dep), false);
+					outfile.putLine(&quot;&lt;/a&gt;&quot;, true);
+				}
+	}</div>
+
+
+	<div class = "comments">//----&lt; convert html fragment into a valid html document &gt;---------------------</div>
+
+	inline void Convert::TransToHTML(std::string path, FileSystem::File &amp;outfile) <div class = "function">{
+			FileSystem::File infile(path);
+			infile.open(FileSystem::File::in, FileSystem::File::text);
+
+			FileSystem::File ftmp(&quot;../WebpageTemplate.txt&quot;);
+			ftmp.open(FileSystem::File::in, FileSystem::File::text);
+			while (ftmp.isGood()) {
+				std::string line = ftmp.getLine();
+				if (line == &quot;&lt;pre&gt;&quot;) {
+					addDependencyLinks(path, outfile);
+				}
+	
+				if (line == &quot;&lt;/pre&gt;&quot;) {
+					while (infile.isGood()) {
+						std::string line = infile.getLine();
+						replaceSpecMarkup(line);
+						outfile.putLine(line);
+					}
+					infile.close();
+				}
+				outfile.putLine(line);  
+			}
+			ftmp.close();
+	}</div>
+
+
+	<div class = "comments">//----&lt; create HTML files with names matching patterns and regexes &gt;---------------------</div>
+
+	inline void Convert::createHTMLFiles(const std::vector&lt;std::string&gt;&amp; fpath) <div class = "function">{
+
+		std::string dir(&quot;../ConvertedWebpages/&quot;);
+		if (!FileSystem::Directory::exists(dir)) 
+			FileSystem::Directory::create(dir);				 <div class = "comments">//generate .htmls file in ../ConvertedWebpages/ dirctory	</div>
+		for (auto path : fpath) {
+			std::string fileName = Path::getName(path) + &quot;.html&quot;;
+			std::string fileOutPath = dir + &quot;/&quot; + fileName;  
+			fileOutPath_.push_back(fileOutPath);
+			fileNames_.push_back(fileName);
+			FileSystem::File outfile(fileOutPath);    			<div class = "comments">//create empty .html files by path</div>
+			outfile.open(FileSystem::File::out, FileSystem::File::text);
+			<div class = "comments">//std::cout &lt;&lt; &quot;\n Create file in ConvertedWebpages folder: &quot; &lt;&lt; fileName;</div>
+			TransToHTML(path, outfile);						 <div class = "comments">//write content in .html file</div>
+			outfile.close();
+			}
+		<div class = "comments">/*std::cout &lt;&lt; &quot;\n Use the standard streams libraries for all I/O and operators new and delete for memory management.\n (meet the Requirements 2)&quot; &lt;&lt; std::endl;
+		*/</div>
+		}</div>	
+
+
+	inline std::vector&lt;std::string&gt; Convert::getFileOutPaths() <div class = "function">{
+		return fileOutPath_;
+	}</div>
+
+	inline std::vector&lt;std::string&gt; Convert::getFileNames() <div class = "function">{
+		return fileNames_;
+	}</div>
+}
+
+</pre>
+</body>
+</html>
+
+

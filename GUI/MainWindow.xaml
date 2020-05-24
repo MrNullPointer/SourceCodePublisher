@@ -1,0 +1,96 @@
+﻿<Window x:Class="GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <!-- 
+    /////////////////////////////////////////////////////////////////////
+    // PopupWindow.xaml.cs - Main Window for OOD Project #4            //
+    //                                                                 //
+    // Wanxiang Xie, CSE687 - Object Oriented Design, Spring 2019      //
+    /////////////////////////////////////////////////////////////////////
+  -->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="233*"/>
+            <ColumnDefinition Width="378*"/>
+            <ColumnDefinition Width="183*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TabControl Name="tabCtrl" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0.333,21.667" Grid.RowSpan="2" SelectionChanged="TabCtrl_SelectionChanged">
+            <TabItem Header="Navigation">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="258.667"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <!--row 0-->
+                    <Label Grid.Row="0" Grid.Column="0" Content="Path:"/>
+                    <TextBox Name="txtPath" Grid.Row="0" Grid.Column="1" Margin="5,5,72.667,5.333" IsReadOnly="True" Grid.ColumnSpan="2"/>
+                    <Label Grid.Row="0" Grid.Column="2" Content="Sub-Dirs:" HorizontalContentAlignment="Right"/>
+                    <CheckBox Name ="cbRecursion" Grid.Row="0" Grid.Column="3" 
+                              IsChecked="True" Margin="6"/>
+                    <!--row 1-->
+                    <Label Grid.Row="5" Grid.Column="0" Content="Patterns:" Grid.ColumnSpan="2" Margin="5,1.667,464,0"/>
+                    <TextBox Name="txtPatterns" Grid.Row="5" Grid.Column="1" Margin="23,5.667,290,6" TextChanged="TxtPatterns_TextChanged"/>
+                    <!--row 2-->
+                    <Label Grid.Row="5" Grid.Column="1" Content="Regex:" Margin="207,1.667,206,0"/>
+                    <TextBox Name="txtRegexes" Grid.Row="5" Grid.Column="1"  Margin="257,5.667,46,5" TextChanged="TxtRegex_TextChanged"/>
+                    <!--row 3-->
+                    <Label Grid.Row="3" Grid.ColumnSpan="2" Content="Directories:"/>
+                    <Label Grid.Row="4" Grid.ColumnSpan="2" Content="Files List:" Margin="5,119.667,256,113.333"/>
+                    <!--row 4-->
+                    <ListBox Name="DirList" Grid.Row="4" Grid.ColumnSpan="4" Margin="5,4.667,-0.333,140.333"
+                             MouseDoubleClick="DirList_MouseDoubleClick" SelectionChanged="DirList_SelectionChanged"/>
+                    <ListBox Name="FileList" Grid.Row="4" Grid.ColumnSpan="4" Margin="5,0,-0.333,0.333" Height="108" VerticalAlignment="Bottom" SelectionChanged="FileList_SelectionChanged" />
+                    <!--row 5-->
+                    <Button Name="btnConverter" Grid.Row="5" Grid.ColumnSpan="4" 
+                            Margin="0,29.667,-0.333,-20.333" Content="Converter" Click="BtnConverter_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Converted Files">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="12*"/>
+                        <ColumnDefinition Width="119*"/>
+                        <ColumnDefinition Width="131*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--row 0-->
+                    <Label Grid.Row="0" Grid.ColumnSpan="3" Content="Converted Files List:" Margin="5,5,4.666,5"/>
+                    <!--row 1-->
+                    <ListBox Name="lstConverted" Grid.Row="1" Grid.ColumnSpan="3" Margin="5,5,4.666,4.667"/>
+                    <!--row 2-->
+                    <Button Name="btnDisplayinBrowser" Grid.Row="2" Grid.Column="0" Margin="5,5.333,5.333,4.667" 
+                            Content="Display by Browser" Click="BtnDisplayinBrowser_Click" Grid.ColumnSpan="2"/>
+                    <Button Name="btnDisplayinWindow" Grid.Row="2" Grid.Column="2" Margin="4.667,5.333,4.666,4.667" 
+                            Content="Display by Window" Click="BtnDisplayinWindow_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <StatusBar Grid.Row="1" Grid.ColumnSpan="3" Margin="0,0.333,0.333,-0.333">
+            <TextBlock Name="txtProgress" Text="Ready to do something..."/>
+        </StatusBar>
+    </Grid>
+</Window>
