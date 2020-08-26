@@ -1,9 +1,3 @@
-<style>
-img{
-    width: 60%;
-    padding-left: 20%;
-}
-</style>
 # Source Code Publisher(源码发布器) (C++) 
 
 ![project diagram](https://github.com/mmyduckx/SourceCodePublisher/blob/master/S19Projects.jpg)
