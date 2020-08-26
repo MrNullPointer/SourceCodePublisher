@@ -9,3 +9,4 @@
 - 实施communication channel & 设计messages用于远程操作&develop a server to accept request message & 通过C++/CLI translater.连接Client GUI与Publish Server
 
 - You could directly use ***run.bat*** or run ***CodePublisher.sln*** to run application
+
